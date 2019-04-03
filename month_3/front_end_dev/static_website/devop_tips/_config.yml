@@ -1,0 +1,13 @@
+
+# Build settings # this tells jekll what to do
+markdown: kramdown
+
+collections:
+  tips:
+    output: true
+  quotes: 
+    output: true
+  assets:
+    output: true
+
+    

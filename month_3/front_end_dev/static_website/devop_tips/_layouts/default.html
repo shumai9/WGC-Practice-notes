@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+<body>
+  <header>
+  <div class="header">
+      <h1>Shumai`s Blog</h1>
+      <h2> Tips for becoming a software developer</h2>
+  </div>
+    <nav>
+    <ul>
+      {% for page in site.pages %}
+      {% if page.nav %}
+        <li><a href="{{page.url}}">{{page.title}}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+</header>
+<div class="grid">
+  <div class="column"> {{ content }}</div>
+  <div class="column"><img src="/assets/img/newbees.jpg"></div>
+  <div class="column"><img src="/assets/img/pupy.jpg"></div>
+  <div class="column"><img src="/assets/img/Best-Friends.jpg"></div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+  <div class="footer">
+    <footer>Produced by Shumai O A</footer>
+  </div>
+</body>
+</div>
+</html>

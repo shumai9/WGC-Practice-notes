@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet/mystyle.css">
+  <head>
+    <title>jS-practice</title>
+  </head>
+<body>
+  <div class="conto">
+  <header>
+    <h1>Keep Playing with JS</h1>
+  </header>
+  
+    <div id="fyta">
+      <img src="http://pre06.deviantart.net/446c/th/pre/i/2014/149/b/1/wolf_trace_by_geulach-d7ka4tu.png" id="logo">
+    </div>      
+    <div id="fyta">
+      <p id="SayHello"></p>
+      <p><a href="JavaScript:void(0)" onclick=" alert('YOU touched it..didn`t YOU!!!');"> Dont touch It</a>
+      </p>
+      <p>
+        <a href="JavaScript:void(0)" onclick="openAlert('YOU will rip what you saw!!!');"> Dont touch It</a>
+      </p>
+      <p> <!-- playing with mouse events-->
+        <a href="JavaScript:void(0)"
+        onmouseover="this.style.color='green';" 
+        onmousedown="this.text = 'Dont try that again please;'"
+        onmouseout="this.style.color = 'red';"
+        ondblclick="this.text='YOU double clicked me';"
+        onmouseup="this.text='Thank you'">You think u can</a><br/>
+      </p>
+    </div>
+
+    <div id="fyta">
+      <input type="text" id="randNum" name="write please"
+      onchange="var dataEntered = document.getElementById('randNum').value;alert('User typed' + dataEntered)">
+      <br />
+      <form action="#" id="sampForm">
+          <input id="charInput" type="text"><p id="keyData"></p>
+          <input type="submit"  value="Submit">
+          <input type="reset"  value="Reset">
+      </form>
+      <br />          
+        <button id="logoButton">Show and Hide logo</button>
+        Status:<input id="mouseInput" type='text' size="30" ><br />
+        Mouse X: <input type="text" id="mouseX"><br />
+        Mouse Y: <input type="text" id="mouseY"><br />
+        <button id="clearInputs">Clear inputs</button>
+    </div>
+  </div>    
+  <script type="text/javascript" src="jStrail.js"></script> 
+</body>
+<!--Playing with input -->
+
+<div class="scpt">
+  
+</div>
+</html>
